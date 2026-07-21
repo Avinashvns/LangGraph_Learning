@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LangGraph
+.langgraph_api/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
