@@ -4,21 +4,21 @@ import operator
 from langgraph.graph import StateGraph , START, END
 from langgraph.types import Send
 
-# State
+# State 1
 class OverallState(TypedDict):
     subjects : list[str]
     jokes : Annotated[list[str] , operator.add]
 
-
+# State 2
 class JokeState(TypedDict):
     subject : str
    
 
-# Planner
+# Planner Node
 def planner(state: OverallState):
     return {}
 
-# Routing Function
+# Conditional Routing Function
 def continue_to_jokes(state: OverallState):
     return [
         Send(
